@@ -61,6 +61,10 @@
                     "path": "0001-gtk-use-com.transmissionbt.Transmission.-D-Bus-names.patch"
                 },
                 {
+                    "type": "patch",
+                    "path": "gtk-add-symbolic-icon.patch"
+                },
+                {
                     "type": "shell",
                     "commands": [
                         "rm m4/glib-gettext.m4"
