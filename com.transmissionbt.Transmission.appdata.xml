@@ -151,4 +151,11 @@
       <image type="source">https://raw.githubusercontent.com/transmission/transmission/master/gtk/screenshots/a.png</image>
     </screenshot>
   </screenshots>
+  <releases>
+    <release date="2017-12-13" version="2.92-3">
+      <description>
+        <p>Fix File → Open URI.</p>
+      </description>
+    </release>
+  </releases>
 </component>
