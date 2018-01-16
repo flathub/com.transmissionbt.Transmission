@@ -65,7 +65,7 @@
                 },
                 {
                     "type": "patch",
-                    "path": "gtk-add-symbolic-icon.patch"
+                    "path": "0002-gtk-add-symbolic-icon.patch"
                 },
                 {
                     "type": "shell",
