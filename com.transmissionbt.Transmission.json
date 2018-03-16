@@ -68,10 +68,6 @@
                     "path": "0002-gtk-add-symbolic-icon.patch"
                 },
                 {
-                    "type": "patch",
-                    "path": "0003-mitigate-dns-rebinding-attacks-against-daemon.patch"
-                },
-                {
                     "type": "shell",
                     "commands": [
                         "rm m4/glib-gettext.m4"
