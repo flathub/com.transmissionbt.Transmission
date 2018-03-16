@@ -152,14 +152,16 @@
     </screenshot>
   </screenshots>
   <releases>
-    <release date="2018-01-16" version="2.92-4">
+    <release date="2018-03-16" version="2.93">
       <description>
-        <p>Fix CVE-2018-5702 security vulnerability (see https://bugs.chromium.org/p/project-zero/issues/detail?id=1447 and https://github.com/transmission/transmission/pull/468 for more details).</p>
-      </description>
-    </release>
-    <release date="2017-12-13" version="2.92-3">
-      <description>
-        <p>Fix File → Open URI.</p>
+        <ul>
+          <li>Fix CVE-2018-5702</li>
+          <li>Fix crash on handshake if establishing DH shared secret fails</li>
+          <li>Fix crash when switching to next tracker during announcement</li>
+          <li>Fix potential issue during password salt extraction in OOM situation</li>
+          <li>Workaround glib_DEFUN- and glib_REQUIRE-related configuration issue</li>
+          <li>Fix building against OpenSSL 1.1.0+</li>
+        </ul>
       </description>
     </release>
   </releases>
