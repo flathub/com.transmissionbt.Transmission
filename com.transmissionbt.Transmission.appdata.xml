@@ -152,7 +152,7 @@
     </screenshot>
   </screenshots>
   <releases>
-   <release date="2018-01-24" version="2.93">
+    <release date="2018-01-16" version="2.92-4">
       <description>
         <p>Fix CVE-2018-5702 security vulnerability (see https://bugs.chromium.org/p/project-zero/issues/detail?id=1447 and https://github.com/transmission/transmission/pull/468 for more details).</p>
       </description>
