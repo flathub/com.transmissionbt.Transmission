@@ -68,6 +68,14 @@
                     "path": "0002-gtk-add-symbolic-icon.patch"
                 },
                 {
+                    "type": "patch",
+                    "path": "0003-Remove-X-GNOME-FullName-from-the-.desktop-file.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "0004-Add-Keywords-to-the-.desktop-file.patch"
+                },
+                {
                     "type": "shell",
                     "commands": [
                         "rm m4/glib-gettext.m4"

@@ -8,7 +8,7 @@ This manifest allows Transmission access to:
 
 * the network, for obvious reasons
 * X11 and Wayland, also for obvious reasons
-* the host filesystem, because Transmission hasn't been adapted to use [portals](https://github.com/flatpak/flatpak/wiki/Portals) to open `.torrents` and read/write downloads
+* the host filesystem, because Transmission hasn't been adapted to use [portals](https://github.com/flatpak/flatpak/wiki/Portals) to open `.torrent`s and read/write downloads
 * PulseAudio, to play a "ding!" when a transfer is complete
 * Notifications, to show a bubble when a transfer is complete
 * DConf, because Gtk's file chooser tries to save its position, visible columns, etc.
@@ -17,7 +17,8 @@ This manifest allows Transmission access to:
 
 * `com.transmissionbt.Transmission.appdata.xml`: [accepted upstream](https://github.com/transmission/transmission/pull/224) but not yet part of a release.
 * `0001-gtk-use-com.transmissionbt.Transmission.-D-Bus-names.patch`: Flatpak only allows apps to own names within the namespace matching the app name. Not submitted upstream.
-* `gtk-add-symbolic-icon.patch`: [submitted upstream](https://github.com/transmission/transmission/pull/449).
+* `0002-gtk-add-symbolic-icon.patch`: [submitted upstream](https://github.com/transmission/transmission/pull/449).
+* `0003-Remove-X-GNOME-FullName-from-the-.desktop-file.patch`, `0004-Add-Keywords-to-the-.desktop-file.patch`: [backported from upstream](https://github.com/transmission/transmission/pull/162).
 
 ## Colophon
 
