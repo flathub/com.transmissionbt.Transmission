@@ -47,6 +47,12 @@
         },
         {
             "name": "transmission",
+            "cleanup": [
+              "/bin/transmission-create",
+              "/bin/transmission-daemon",
+              "/bin/transmission-edit",
+              "/bin/transmission-show"
+            ],
             "sources": [
                 {
                     "type": "archive",
