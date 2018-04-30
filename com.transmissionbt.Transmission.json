@@ -21,7 +21,9 @@
         "--talk-name=org.freedesktop.Notifications",
 
         "--talk-name=org.gtk.vfs",
-        "--talk-name=org.gtk.vfs.*"
+        "--talk-name=org.gtk.vfs.*",
+
+        "--talk-name=org.kde.StatusNotifierWatcher"
     ],
     "cleanup": [
         "*.a",
@@ -31,6 +33,7 @@
         "/share/pixmaps"
     ],
     "modules": [
+        "shared-modules/libappindicator/libappindicator-gtk3-12.10.json",
         {
             "name": "libevent",
             "cleanup": [
