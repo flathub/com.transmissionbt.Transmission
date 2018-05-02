@@ -152,6 +152,15 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release date="2018-05-01" version="2.94">
+      <description>
+        <ul>
+          <li>Fix torrents ETA calculation</li>
+          <li>Web client: fix tracker error XSS in inspector</li>
+          <li>Web client: fix torrent name HTML-escaping in trackers inspector tab</li>
+        </ul>
+      </description>
+    </release>
     <release date="2018-03-16" version="2.93">
       <description>
         <ul>
