@@ -121,7 +121,7 @@
   <summary xml:lang="oc">Recep e parteja de fichièrs via BitTorrent</summary>
   <summary xml:lang="pl">Pobieranie i udostępnianie plików przez sieć BitTorrent</summary>
   <summary xml:lang="pt">Receber e partilhar ficheiros via bittorrent</summary>
-  <summary xml:lang="pt_BR">Baixar e compartilhar arquivos pelo BitTorrent</summary>
+  <summary xml:lang="pt_BR">Baixar Torrent</summary>
   <summary xml:lang="ro">Descarcă și partajează fișiere prin BitTorrent</summary>
   <summary xml:lang="ru">Загружайте и обменивайтесь файлами в сети BitTorrent</summary>
   <summary xml:lang="sk">Sťahujte a zdieľajte súbory cez BitTorrent</summary>
@@ -139,12 +139,12 @@
   <summary xml:lang="zh_CN">通过 BitTorrent 下载和共享文件</summary>
   <summary xml:lang="zh_HK">透過 BitTorrent 來下載和分享檔案</summary>
   <summary xml:lang="zh_TW">透過 BitTorrent 協定來下載和分享檔案</summary>
-
   <description>
     <p>BitTorrent is a peer-to-peer file-sharing protocol that is commonly used to distribute large amounts of data between multiple users.</p>
     <p>Transmission is a BitTorrent client with an easy-to-use frontend on top a cross-platform backend. Native frontends are available for OS X and Windows, as well as command line and web frontends.</p>
     <p>Notable features of Transmission include support for Local Peer Discovery, encryption, DHT, µTP, PEX and Magnet Link.</p>
   </description>
+  <description xml:lang="pt_BR"><p>Transmission é um leve e simples cliente de BitTorrent que apresenta uma interface gráfica bem simples e um back-end multiplataforma.</p></description> 
   <url type="homepage">https://transmissionbt.com/</url>
   <screenshots>
     <screenshot type="default">
