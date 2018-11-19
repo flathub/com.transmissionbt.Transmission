@@ -1,7 +1,7 @@
 {
     "app-id": "com.transmissionbt.Transmission",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "3.28",
+    "runtime-version": "3.30",
     "sdk": "org.gnome.Sdk",
     "command": "transmission-gtk",
     "rename-desktop-file": "transmission-gtk.desktop",
@@ -50,6 +50,10 @@
         },
         {
             "name": "transmission",
+            # Tarball was generated with Automake 1.15, running configure as-is
+            # causes aclocal-1.5 to be run, which is not present in the 3.30
+            # SDK.
+            "rm-configure": true,
             "cleanup": [
               "/bin/transmission-create",
               "/bin/transmission-daemon",
