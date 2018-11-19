@@ -1,7 +1,7 @@
 {
     "app-id": "com.transmissionbt.Transmission",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "3.28",
+    "runtime-version": "3.30",
     "sdk": "org.gnome.Sdk",
     "command": "transmission-gtk",
     "rename-desktop-file": "transmission-gtk.desktop",
@@ -17,7 +17,9 @@
 
         "--filesystem=host",
 
-        "--talk-name=ca.desrt.dconf",
+        "--filesystem=xdg-run/dconf", "--filesystem=~/.config/dconf:ro",
+        "--talk-name=ca.desrt.dconf", "--env=DCONF_USER_CONFIG_DIR=.config/dconf",
+
         "--talk-name=org.freedesktop.Notifications",
 
         "--talk-name=org.gtk.vfs",
@@ -50,6 +52,10 @@
         },
         {
             "name": "transmission",
+            # Tarball was generated with Automake 1.15, running configure as-is
+            # causes aclocal-1.5 to be run, which is not present in the 3.30
+            # SDK.
+            "rm-configure": true,
             "cleanup": [
               "/bin/transmission-create",
               "/bin/transmission-daemon",
