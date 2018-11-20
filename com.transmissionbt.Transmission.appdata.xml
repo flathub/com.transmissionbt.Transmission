@@ -177,4 +177,7 @@
   </releases>
   <translation type="gettext">transmission-gtk</translation>
   <update_contact>will+transmission@willthompson.co.uk</update_contact>
+  <content_rating type="oars-1.1">
+    <content_attribute id="social-info">mild</content_attribute>
+  </content_rating>
 </component>
