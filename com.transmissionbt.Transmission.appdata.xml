@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
-  <id type="desktop">com.transmissionbt.Transmission.desktop</id>
+  <id>com.transmissionbt.Transmission</id>
+  <launchable type="desktop-id">com.transmissionbt.Transmission.desktop</launchable>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0 OR GPL-3.0</project_license>
 
@@ -176,4 +177,7 @@
   </releases>
   <translation type="gettext">transmission-gtk</translation>
   <update_contact>will+transmission@willthompson.co.uk</update_contact>
+  <content_rating type="oars-1.1">
+    <content_attribute id="social-info">mild</content_attribute>
+  </content_rating>
 </component>
