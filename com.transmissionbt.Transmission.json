@@ -45,17 +45,13 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/libevent/libevent/releases/download/release-2.1.8-stable/libevent-2.1.8-stable.tar.gz",
-                    "sha256": "965cc5a8bb46ce4199a47e9b2c9e1cae3b137e8356ffdad6d94d3b9069b71dc2"
+                    "url": "https://github.com/libevent/libevent/releases/download/release-2.1.11-stable/libevent-2.1.11-stable.tar.gz",
+                    "sha256": "a65bac6202ea8c5609fd5c7e480e6d25de467ea1917c08290c521752f147283d"
                 }
             ]
         },
         {
             "name": "transmission",
-            # Tarball was generated with Automake 1.15, running configure as-is
-            # causes aclocal-1.5 to be run, which is not present in the 3.30
-            # SDK.
-            "rm-configure": true,
             "cleanup": [
               "/bin/transmission-create",
               "/bin/transmission-daemon",
@@ -65,29 +61,13 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/transmission/transmission-releases/raw/master/transmission-2.94.tar.xz",
-                    "sha256": "35442cc849f91f8df982c3d0d479d650c6ca19310a994eccdaa79a4af3916b7d"
+                    "url": "https://github.com/transmission/transmission-releases/raw/master/transmission-3.00.tar.xz",
+                    "sha256": "9144652fe742f7f7dd6657716e378da60b751aaeda8bef8344b3eefc4db255f2"
                 },
                 {
                     "type": "patch",
-                    "path": "0001-gtk-use-com.transmissionbt.Transmission.-D-Bus-names.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "0002-gtk-add-symbolic-icon.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "0003-Remove-X-GNOME-FullName-from-the-.desktop-file.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "0004-Add-Keywords-to-the-.desktop-file.patch"
-                },
-                {
-                    "type": "shell",
-                    "commands": [
-                        "rm m4/glib-gettext.m4"
+                    "paths": [
+                        "0001-gtk-use-com.transmissionbt.Transmission.-D-Bus-names.patch"
                     ]
                 },
                 {
@@ -102,4 +82,3 @@
         }
     ]
 }
-
