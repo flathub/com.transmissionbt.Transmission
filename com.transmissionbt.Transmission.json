@@ -64,7 +64,8 @@
                 {
                     "type": "patch",
                     "paths": [
-                        "0001-gtk-use-com.transmissionbt.Transmission.-D-Bus-names.patch"
+                        "0001-gtk-use-com.transmissionbt.Transmission.-D-Bus-names.patch",
+                        "0002-gtk-Use-reversed-domain-icon-name-throughout.patch"
                     ]
                 },
                 {
