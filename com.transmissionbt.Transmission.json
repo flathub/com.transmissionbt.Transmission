@@ -5,6 +5,7 @@
     "sdk": "org.gnome.Sdk",
     "command": "transmission-gtk",
     "rename-desktop-file": "transmission-gtk.desktop",
+    "rename-appdata-file": "transmission-gtk.appdata.xml",
     "rename-icon": "transmission",
     "copy-icon": true,
     "finish-args": [
