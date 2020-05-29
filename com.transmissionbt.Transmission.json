@@ -65,17 +65,10 @@
                     "type": "patch",
                     "paths": [
                         "0001-gtk-use-com.transmissionbt.Transmission.-D-Bus-names.patch",
-                        "0002-gtk-Use-reversed-domain-icon-name-throughout.patch"
+                        "0002-gtk-Use-reversed-domain-icon-name-throughout.patch",
+                        "appdata.patch"
                     ]
-                },
-                {
-                    "type": "file",
-                    "path": "com.transmissionbt.Transmission.appdata.xml",
-                    "dest-filename": "com.transmissionbt.Transmission.appdata.xml"
                 }
-            ],
-            "post-install": [
-                "install -D com.transmissionbt.Transmission.appdata.xml /app/share/appdata/com.transmissionbt.Transmission.appdata.xml"
             ]
         }
     ]
