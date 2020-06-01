@@ -1,0 +1,76 @@
+{
+    "app-id": "com.transmissionbt.Transmission",
+    "runtime": "org.gnome.Platform",
+    "runtime-version": "3.36",
+    "sdk": "org.gnome.Sdk",
+    "command": "transmission-gtk",
+    "rename-desktop-file": "transmission-gtk.desktop",
+    "rename-appdata-file": "transmission-gtk.appdata.xml",
+    "rename-icon": "transmission",
+    "copy-icon": true,
+    "finish-args": [
+        "--share=ipc",
+        "--share=network",
+
+        "--socket=fallback-x11",
+        "--socket=wayland",
+        "--socket=pulseaudio",
+
+        "--filesystem=host",
+
+        "--talk-name=org.freedesktop.Notifications",
+
+        "--talk-name=org.gtk.vfs",
+        "--talk-name=org.gtk.vfs.*",
+
+        "--talk-name=org.kde.StatusNotifierWatcher"
+    ],
+    "cleanup": [
+        "*.a",
+        "*.la",
+        "/lib/pkgconfig",
+        "/share/man",
+        "/share/pixmaps"
+    ],
+    "modules": [
+        "shared-modules/libappindicator/libappindicator-gtk3-12.10.json",
+        {
+            "name": "libevent",
+            "cleanup": [
+              "/include",
+              "/bin"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/libevent/libevent/releases/download/release-2.1.11-stable/libevent-2.1.11-stable.tar.gz",
+                    "sha256": "a65bac6202ea8c5609fd5c7e480e6d25de467ea1917c08290c521752f147283d"
+                }
+            ]
+        },
+        {
+            "name": "transmission",
+            "cleanup": [
+              "/bin/transmission-create",
+              "/bin/transmission-daemon",
+              "/bin/transmission-edit",
+              "/bin/transmission-show"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/transmission/transmission-releases/raw/master/transmission-3.00.tar.xz",
+                    "sha256": "9144652fe742f7f7dd6657716e378da60b751aaeda8bef8344b3eefc4db255f2"
+                },
+                {
+                    "type": "patch",
+                    "paths": [
+                        "0001-gtk-use-com.transmissionbt.Transmission.-D-Bus-names.patch",
+                        "0002-gtk-Use-reversed-domain-icon-name-throughout.patch",
+                        "appdata.patch"
+                    ]
+                }
+            ]
+        }
+    ]
+}
