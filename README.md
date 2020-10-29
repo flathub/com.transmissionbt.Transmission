@@ -23,7 +23,7 @@ This manifest allows Transmission access to:
 
 ## Delta from upstream
 
-* `com.transmissionbt.Transmission.appdata.xml`: [accepted upstream](https://github.com/transmission/transmission/pull/224) but not yet part of a release.
+* `appdata.patch`: Flathub requires OARS, not yet submitted upstream.
 * `0001-gtk-use-com.transmissionbt.Transmission.-D-Bus-names.patch`: Flatpak only allows apps to own names within the namespace matching the app name. Not submitted upstream.
 * `0002-gtk-Use-reversed-domain-icon-name-throughout.patch`: as above, but for icons.
 
