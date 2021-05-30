@@ -20,6 +20,7 @@
 
         "--talk-name=org.freedesktop.Notifications",
 
+        "--filesystem=xdg-run/gvfsd",
         "--talk-name=org.gtk.vfs",
         "--talk-name=org.gtk.vfs.*",
 
