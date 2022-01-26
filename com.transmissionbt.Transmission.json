@@ -38,6 +38,11 @@
             ],
             "sources": [
                 {
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 1606,
+                        "url-template": "https://github.com/libevent/libevent/releases/download/release-$version-stable/libevent-$version-stable.tar.gz"
+                    },
                     "type": "archive",
                     "url": "https://github.com/libevent/libevent/releases/download/release-2.1.12-stable/libevent-2.1.12-stable.tar.gz",
                     "sha256": "92e6de1be9ec176428fd2367677e61ceffc2ee1cb119035037a27d346b0403bb"
@@ -54,6 +59,11 @@
             ],
             "sources": [
                 {
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 5002,
+                        "url-template": "https://github.com/transmission/transmission/releases/download/$version/transmission-$version.tar.xz"
+                    },
                     "type": "archive",
                     "url": "https://github.com/transmission/transmission/releases/download/3.00/transmission-3.00.tar.xz",
                     "sha256": "9144652fe742f7f7dd6657716e378da60b751aaeda8bef8344b3eefc4db255f2"
