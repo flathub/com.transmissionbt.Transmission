@@ -11,19 +11,14 @@
     "finish-args": [
         "--share=ipc",
         "--share=network",
-
         "--socket=fallback-x11",
         "--socket=wayland",
         "--socket=pulseaudio",
-
         "--filesystem=host",
-
         "--talk-name=org.freedesktop.Notifications",
-
         "--filesystem=xdg-run/gvfsd",
         "--talk-name=org.gtk.vfs",
         "--talk-name=org.gtk.vfs.*",
-
         "--talk-name=org.kde.StatusNotifierWatcher"
     ],
     "cleanup": [
@@ -38,8 +33,8 @@
         {
             "name": "libevent",
             "cleanup": [
-              "/include",
-              "/bin"
+                "/include",
+                "/bin"
             ],
             "sources": [
                 {
@@ -52,10 +47,10 @@
         {
             "name": "transmission",
             "cleanup": [
-              "/bin/transmission-create",
-              "/bin/transmission-daemon",
-              "/bin/transmission-edit",
-              "/bin/transmission-show"
+                "/bin/transmission-create",
+                "/bin/transmission-daemon",
+                "/bin/transmission-edit",
+                "/bin/transmission-show"
             ],
             "sources": [
                 {
