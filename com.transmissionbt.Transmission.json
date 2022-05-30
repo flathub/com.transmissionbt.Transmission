@@ -1,7 +1,7 @@
 {
     "app-id": "com.transmissionbt.Transmission",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "41",
+    "runtime-version": "42",
     "sdk": "org.gnome.Sdk",
     "command": "transmission-gtk",
     "rename-desktop-file": "transmission-gtk.desktop",
@@ -17,7 +17,6 @@
         "--filesystem=host",
         "--talk-name=org.freedesktop.Notifications",
         "--filesystem=xdg-run/gvfsd",
-        "--talk-name=org.gtk.vfs",
         "--talk-name=org.gtk.vfs.*",
         "--talk-name=org.kde.StatusNotifierWatcher"
     ],
