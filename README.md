@@ -16,10 +16,11 @@ This manifest allows Transmission access to:
 
 * the network, for obvious reasons
 * X11 and Wayland, also for obvious reasons
-* the host filesystem, because Transmission hasn't been adapted to use [portals](https://github.com/flatpak/flatpak/wiki/Portals) to open `.torrent`s and read/write downloads
+* the host filesystem, because Transmission hasn't been adapted to use [portals](https://github.com/flatpak/flatpak/wiki/Portals) to open `.torrent`s and read/write downloads (#31)
 * PulseAudio, to play a "ding!" when a transfer is complete
 * Notifications, to show a bubble when a transfer is complete
-* DConf, because Gtk's file chooser tries to save its position, visible columns, etc.
+* GVFS, to support opening torrent files by URI
+* `org.kde.StatusNotifierWatcher`, to display a notification area icon in environments where this is supported
 
 ## Delta from upstream
 
