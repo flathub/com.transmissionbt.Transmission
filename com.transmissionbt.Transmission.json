@@ -50,6 +50,7 @@
         },
         {
             "name": "transmission",
+            "buildsystem": "cmake-ninja",
             "cleanup": [
                 "/bin/transmission-create",
                 "/bin/transmission-daemon",
