@@ -96,14 +96,6 @@
                     "type": "archive",
                     "url": "https://github.com/transmission/transmission/releases/download/4.0.0/transmission-4.0.0.tar.xz",
                     "sha256": "af4f023c0b3f2417f62b314d84ea7f329ca080f86664f24b44246a8c50c6b10a"
-                },
-                {
-                    "type": "patch",
-                    "paths": [
-                        "0001-gtk-use-com.transmissionbt.Transmission.-D-Bus-names.patch",
-                        "0002-gtk-Use-reversed-domain-icon-name-throughout.patch",
-                        "appdata.patch"
-                    ]
                 }
             ]
         }
