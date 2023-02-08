@@ -49,6 +49,35 @@
             ]
         },
         {
+            "name": "miniupnp",
+            "buildsystem": "simple",
+            "build-commands": [
+                "cd miniupnpc ; INSTALLPREFIX=/app make install"
+            ],
+            "sources": [
+            {
+                "type": "git",
+                "tag": "miniupnpc_2_1",
+                "url": "https://github.com/miniupnp/miniupnp.git"
+            }
+            ]
+        },
+        {
+            "name": "dht",
+            "buildsystem": "simple",
+            "build-commands": [
+                "make all",
+                "install -Dm 644 dht.h -t /app/include"
+            ],
+            "sources": [
+            {
+                "type": "git",
+                "tag": "dht-0.27",
+                "url": "https://github.com/jech/dht.git"
+            }
+            ]
+        },
+        {
             "name": "transmission",
             "buildsystem": "cmake-ninja",
             "cleanup": [
