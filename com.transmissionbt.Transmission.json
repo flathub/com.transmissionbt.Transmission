@@ -50,6 +50,11 @@
         },
         {
             "name": "transmission",
+            "buildsystem": "cmake",
+            "config-opts": [
+                "-DENABLE_MAC=OFF",
+                "-DENABLE_GTK=ON",
+            ],
             "cleanup": [
                 "/bin/transmission-create",
                 "/bin/transmission-daemon",
