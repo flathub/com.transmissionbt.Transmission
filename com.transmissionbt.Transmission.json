@@ -50,7 +50,7 @@
         },
         {
             "name": "transmission",
-            "buildsystem": "cmake",
+            "buildsystem": "cmake-ninja",
             "config-opts": [
                 "-DCMAKE_BUILD_TYPE=RelWithDebInfo",
                 "-DENABLE_MAC=OFF",
