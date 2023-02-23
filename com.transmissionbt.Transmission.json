@@ -53,7 +53,7 @@
             "buildsystem": "cmake",
             "config-opts": [
                 "-DENABLE_MAC=OFF",
-                "-DENABLE_GTK=ON",
+                "-DENABLE_GTK=ON"
             ],
             "cleanup": [
                 "/bin/transmission-create",
