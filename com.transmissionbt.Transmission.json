@@ -76,8 +76,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://ftp.gnome.org/pub/GNOME/sources/glibmm/2.47/glibmm-2.47.92.tar.xz",
-                    "sha256": "47cfcd960cbd78e1e960a04aa650227e7ce57874121f0f014140d3e40c928900"
+                    "url": "http://ftp.gnome.org/pub/GNOME/sources/glibmm/2.9/glibmm-2.9.1.tar.gz",
+                    "sha256": "e742eadeed533435959f62533d1caf4f79081189b803a097f6232cb3d2ced773"
                 }
             ]
         },
