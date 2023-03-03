@@ -196,6 +196,14 @@
                     "type": "archive",
                     "url": "https://github.com/transmission/transmission/releases/download/4.0.1/transmission-4.0.1.tar.xz",
                     "sha256": "8fc5aef23638c983406f6a3ee9918369e4cdc84e3228bd2fb3d01dd55cdad900"
+                },
+                {
+                    "type":"patch",
+                    "path":"appdata.patch"
+                },
+                {
+                    "type":"patch",
+                    "path":"0001-gtk-use-com.transmissionbt.Transmission.-D-Bus-names.patch"
                 }
             ]
         }

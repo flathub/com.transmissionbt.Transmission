@@ -1,25 +1,30 @@
-From: Will Thompson <wjt@endlessm.com>
-Date: Fri, 4 Aug 2017 15:20:07 +0100
-Subject: [PATCH] gtk: use com.transmissionbt.Transmission.* D-Bus names
+From 3dd2667b54c463610f01b84c2de86e096e5dfd1a Mon Sep 17 00:00:00 2001
+From: bbhtt <bbhtt.zn0i8@slmail.me>
+Date: Fri, 3 Mar 2023 20:51:05 +0530
+Subject: [PATCH] gtk: use com.transmissionbt.Transmission.* D-Bus
+ names
 
 Using the com.transmissionbt.Transmission. namespace (with a capital T)
 is consistent with the Qt frontend using
 com.transmissionbt.Transmission, and with standard D-Bus naming
 conventions.
 ---
- gtk/main.c            | 2 +-
+ gtk/Application.cc | 2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
 
-diff --git a/gtk/main.c b/gtk/main.c
-index 8bc526204..cb9743301 100644
---- a/gtk/main.c
-+++ b/gtk/main.c
-@@ -675,7 +675,7 @@ int main(int argc, char** argv)
- 
-     /* init the application for the specified config dir */
-     stat(cbdata.config_dir, &sb);
--    application_id = g_strdup_printf("com.transmissionbt.transmission_%lu_%lu", (unsigned long)sb.st_dev,
-+    application_id = g_strdup_printf ("com.transmissionbt.Transmission._%lu_%lu", (unsigned long)sb.st_dev,
-         (unsigned long)sb.st_ino);
-     app = gtk_application_new(application_id, G_APPLICATION_HANDLES_OPEN);
-     g_signal_connect(app, "open", G_CALLBACK(on_open), &cbdata);
+diff --git a/gtk/Application.cc b/gtk/Application.cc
+index 52d5e7c1f..6690c5158 100644
+--- a/gtk/Application.cc
++++ b/gtk/Application.cc
+@@ -700,7 +700,7 @@ std::string get_application_id(std::string const& config_dir)
+ {
+     struct stat sb = {};
+     (void)::stat(config_dir.c_str(), &sb);
+-    return fmt::format("com.transmissionbt.transmission_{}_{}", sb.st_dev, sb.st_ino);
++    return fmt::format("com.transmissionbt.Transmission._{}_{}", sb.st_dev, sb.st_ino);
+ }
+
+ } // namespace
+--
+2.39.2
+
