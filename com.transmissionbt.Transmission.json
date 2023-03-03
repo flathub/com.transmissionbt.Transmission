@@ -5,7 +5,7 @@
     "sdk": "org.gnome.Sdk",
     "command": "transmission-gtk",
     "rename-desktop-file": "transmission-gtk.desktop",
-    "rename-appdata-file": "transmission-gtk.appdata.xml",
+    "rename-appdata-file": "transmission-gtk.metainfo.xml",
     "rename-icon": "transmission",
     "copy-icon": true,
     "finish-args": [
@@ -28,7 +28,7 @@
         "/share/doc",
         "/share/man",
         "/share/pixmaps",
-         "/share/pkgconfig"
+        "/share/pkgconfig"
     ],
     "modules": [
         "shared-modules/libappindicator/libappindicator-gtk3-12.10.json",
