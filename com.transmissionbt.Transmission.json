@@ -9,6 +9,7 @@
     "rename-icon": "transmission",
     "copy-icon": true,
     "finish-args": [
+        "--device=dri",
         "--share=ipc",
         "--share=network",
         "--socket=fallback-x11",
