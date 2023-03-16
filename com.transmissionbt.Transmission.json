@@ -53,19 +53,19 @@
             ]
         },
         {
-           "name": "mm-common",
-           "buildsystem": "meson",
-           "cleanup": [
+            "name": "mm-common",
+            "buildsystem": "meson",
+            "cleanup": [
                 "/share/mm-common",
                 "/bin/mm-common*"
             ],
-           "sources": [
-               {
-                   "type": "archive",
-                   "url": "https://download.gnome.org/sources/mm-common/1.0/mm-common-1.0.5.tar.xz",
-                   "sha256": "705c6d29f4116a29bde4e36cfc1b046c92b6ef8c6dae4eaec85018747e6da5aa"
-               }
-           ]
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/mm-common/1.0/mm-common-1.0.5.tar.xz",
+                    "sha256": "705c6d29f4116a29bde4e36cfc1b046c92b6ef8c6dae4eaec85018747e6da5aa"
+                }
+            ]
         },
         {
             "name": "sigc++",
@@ -240,16 +240,16 @@
                         "url-template": "https://github.com/transmission/transmission/releases/download/$version/transmission-$version.tar.xz"
                     },
                     "type": "archive",
-                    "url": "https://github.com/transmission/transmission/releases/download/4.0.1/transmission-4.0.1.tar.xz",
-                    "sha256": "8fc5aef23638c983406f6a3ee9918369e4cdc84e3228bd2fb3d01dd55cdad900"
+                    "url": "https://github.com/transmission/transmission/releases/download/4.0.2/transmission-4.0.2.tar.xz",
+                    "sha256": "39bf7a104a722805a9dc089cdaaffe33bf90b82230a7ea7f340cae59f00a2ee8"
                 },
                 {
-                    "type":"patch",
-                    "path":"appdata.patch"
+                    "type": "patch",
+                    "path": "appdata.patch"
                 },
                 {
-                    "type":"patch",
-                    "path":"0001-gtk-use-com.transmissionbt.Transmission.-D-Bus-names.patch"
+                    "type": "patch",
+                    "path": "0001-gtk-use-com.transmissionbt.Transmission.-D-Bus-names.patch"
                 }
             ]
         }
