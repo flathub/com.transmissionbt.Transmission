@@ -16,6 +16,7 @@ index e39180776..4310b7945 100644
      <content_attribute id="social-info">mild</content_attribute>
    </content_rating>
 +  <releases>
++    <release date="2023-03-16" version="4.0.2" />
 +    <release date="2023-02-23" version="4.0.1" />
 +    <release date="2023-02-08" version="4.0.0" />
 +    <release date="2020-05-03" version="3.00" />
