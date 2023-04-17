@@ -245,11 +245,12 @@
                 },
                 {
                     "type": "patch",
-                    "path": "appdata.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "0001-gtk-use-com.transmissionbt.Transmission.-D-Bus-names.patch"
+                    "paths": [
+                        "0001-gtk-use-com.transmissionbt.Transmission.-D-Bus-names.patch",
+                        "Add-release-history-to-metainfo-file.patch",
+                        "Add-more-URLs-to-AppStream-metainfo.patch",
+                        "Add-translation-info-to-AppStream-metainfo.patch"
+                    ]
                 }
             ]
         }
