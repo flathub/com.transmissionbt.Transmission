@@ -1,7 +1,7 @@
 {
     "app-id": "com.transmissionbt.Transmission",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "44",
+    "runtime-version": "45",
     "sdk": "org.gnome.Sdk",
     "command": "transmission-gtk",
     "rename-desktop-file": "transmission-gtk.desktop",
@@ -24,9 +24,12 @@
     "cleanup": [
         "*.a",
         "*.la",
+        "/include",
         "/lib/pkgconfig",
         "/share/aclocal",
         "/share/doc",
+        "/share/gdm",
+        "/share/gnome",
         "/share/man",
         "/share/pixmaps",
         "/share/pkgconfig"
