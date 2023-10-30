@@ -24,9 +24,12 @@
     "cleanup": [
         "*.a",
         "*.la",
+        "/include",
         "/lib/pkgconfig",
         "/share/aclocal",
         "/share/doc",
+        "/share/gdm",
+        "/share/gnome",
         "/share/man",
         "/share/pixmaps",
         "/share/pkgconfig"
