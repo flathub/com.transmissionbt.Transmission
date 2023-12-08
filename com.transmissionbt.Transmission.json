@@ -99,9 +99,8 @@
                     "type": "patch",
                     "paths": [
                         "0001-gtk-use-com.transmissionbt.Transmission.-D-Bus-names.patch",
-                        "Add-release-history-to-metainfo-file.patch",
-                        "Add-more-URLs-to-AppStream-metainfo.patch",
-                        "Add-translation-info-to-AppStream-metainfo.patch"
+                        "0002-GTK-Improve-appstream-metainfo-5407.patch",
+                        "0003-GTK-Add-4.0.4-and-4.0.5-releases-to-metainfo.patch"
                     ]
                 }
             ]
