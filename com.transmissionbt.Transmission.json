@@ -35,7 +35,6 @@
         "/share/pkgconfig"
     ],
     "modules": [
-        "shared-modules/libappindicator/libappindicator-gtk3-12.10.json",
         {
             "name": "libevent",
             "cleanup": [
@@ -55,163 +54,13 @@
                 }
             ]
         },
-        {
-            "name": "mm-common",
-            "buildsystem": "meson",
-            "cleanup": [
-                "/share/mm-common",
-                "/bin/mm-common*"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://download.gnome.org/sources/mm-common/1.0/mm-common-1.0.5.tar.xz",
-                    "sha256": "705c6d29f4116a29bde4e36cfc1b046c92b6ef8c6dae4eaec85018747e6da5aa"
-                }
-            ]
-        },
-        {
-            "name": "sigc++",
-            "buildsystem": "meson",
-            "config-opts": [
-                "-Dbuild-documentation=false",
-                "-Dbuild-examples=false",
-                "-Dbuild-tests=false"
-            ],
-            "cleanup": [
-                "/lib/sigc++-3.0"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://download.gnome.org/sources/libsigc%2B%2B/3.4/libsigc%2B%2B-3.4.0.tar.xz",
-                    "sha256": "02e2630ffb5ce93cd52c38423521dfe7063328863a6e96d41d765a6116b8707e"
-                }
-            ]
-        },
-        {
-            "name": "glibmm",
-            "buildsystem": "meson",
-            "config-opts": [
-                "-Dbuild-documentation=false",
-                "-Dbuild-examples=false"
-            ],
-            "cleanup": [
-                "/lib/glibmm-2.68",
-                "/lib/giomm-2.68",
-                "/lib/libglibmm_generate_extra_defs*"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://download.gnome.org/sources/glibmm/2.74/glibmm-2.74.0.tar.xz",
-                    "sha256": "2b472696cbac79db8e405724118ec945219c5b9b18af63dc8cfb7f1d89b0f1fa"
-                }
-            ]
-        },
-        {
-            "name": "cairomm",
-            "buildsystem": "meson",
-            "config-opts": [
-                "-Dbuild-documentation=false",
-                "-Dbuild-examples=false"
-            ],
-            "cleanup": [
-                "/lib/cairomm-1.16"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://www.cairographics.org/releases/cairomm-1.16.2.tar.xz",
-                    "sha256": "6a63bf98a97dda2b0f55e34d1b5f3fb909ef8b70f9b8d382cb1ff3978e7dc13f"
-                }
-            ]
-        },
-        {
-            "name": "pangomm",
-            "buildsystem": "meson",
-            "config-opts": [
-                "-Dbuild-documentation=false"
-            ],
-            "cleanup": [
-                "/lib/pangomm-2.48"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://download.gnome.org/sources/pangomm/2.50/pangomm-2.50.1.tar.xz",
-                    "sha256": "ccc9923413e408c2bff637df663248327d72822f11e394b423e1c5652b7d9214"
-                }
-            ]
-        },
-        {
-            "name": "atkmm",
-            "buildsystem": "meson",
-            "config-opts": [
-                "-Dbuild-documentation=false"
-            ],
-            "cleanup": [
-                "/lib/atkmm-2.36"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://download.gnome.org/sources/atkmm/2.36/atkmm-2.36.2.tar.xz",
-                    "sha256": "6f62dd99f746985e573605937577ccfc944368f606a71ca46342d70e1cdae079"
-                }
-            ]
-        },
-        {
-            "name": "gtkmm",
-            "buildsystem": "meson",
-            "config-opts": [
-                "-Dbuild-documentation=false",
-                "-Dbuild-demos=false",
-                "-Dbuild-tests=false"
-            ],
-            "cleanup": [
-                "/lib/gdkmm-4.0",
-                "/lib/gtkmm-4.0"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://download.gnome.org/sources/gtkmm/4.8/gtkmm-4.8.0.tar.xz",
-                    "sha256": "c82786d46e2b07346b6397ca7f1929d952f4922fa5c9db3dee08498b9a136cf5"
-                }
-            ]
-        },
-        {
-            "name": "canberra",
-            "cleanup": [
-                "/etc",
-                "/include",
-                "/lib/gnome-settings-daemon-3.0",
-                "/lib/gtk-3.0",
-                "/libexec",
-                "/share/gtk-doc",
-                "/share/vala"
-            ],
-            "config-opts": [
-                "--disable-static",
-                "--disable-gtk-doc",
-                "--disable-oss",
-                "--enable-pulse",
-                "--disable-udev",
-                "--disable-gtk",
-                "--enable-gtk3",
-                "--disable-lynx"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "http://0pointer.de/lennart/projects/libcanberra/libcanberra-0.30.tar.xz",
-                    "sha256": "c2b671e67e0c288a69fc33dc1b6f1b534d07882c2aceed37004bf48c601afa72"
-                }
-            ]
-        },
+        "gtkmm.json",
+        "shared-modules/libcanberra/libcanberra.json",
         {
             "name": "sound-theme-freedesktop",
+            "modules": [
+                "shared-modules/intltool/intltool-0.51.json"
+            ],
             "sources": [
                 {
                     "type": "archive",
@@ -243,16 +92,15 @@
                         "url-template": "https://github.com/transmission/transmission/releases/download/$version/transmission-$version.tar.xz"
                     },
                     "type": "archive",
-                    "url": "https://github.com/transmission/transmission/releases/download/4.0.4/transmission-4.0.4.tar.xz",
-                    "sha256": "15f7b4318fdfbffb19aa8d9a6b0fd89348e6ef1e86baa21a0806ffd1893bd5a6"
+                    "url": "https://github.com/transmission/transmission/releases/download/4.0.5/transmission-4.0.5.tar.xz",
+                    "sha256": "fd68ff114a479200043c30c7e69dba4c1932f7af36ca4c5b5d2edcb5866e6357"
                 },
                 {
                     "type": "patch",
                     "paths": [
                         "0001-gtk-use-com.transmissionbt.Transmission.-D-Bus-names.patch",
-                        "Add-release-history-to-metainfo-file.patch",
-                        "Add-more-URLs-to-AppStream-metainfo.patch",
-                        "Add-translation-info-to-AppStream-metainfo.patch"
+                        "0002-GTK-Improve-appstream-metainfo-5407.patch",
+                        "0003-GTK-Add-4.0.4-and-4.0.5-releases-to-metainfo.patch"
                     ]
                 }
             ]
