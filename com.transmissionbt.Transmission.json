@@ -35,7 +35,6 @@
         "/share/pkgconfig"
     ],
     "modules": [
-        "shared-modules/libappindicator/libappindicator-gtk3-12.10.json",
         {
             "name": "libevent",
             "cleanup": [
@@ -87,6 +86,9 @@
         },
         {
             "name": "sound-theme-freedesktop",
+            "modules": [
+                "shared-modules/intltool/intltool-0.51.json"
+            ],
             "sources": [
                 {
                     "type": "archive",
