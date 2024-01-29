@@ -21,6 +21,7 @@ This manifest allows Transmission access to:
 * Notifications, to show a bubble when a transfer is complete
 * GVFS, to support opening torrent files by URI
 * `org.kde.StatusNotifierWatcher`, to display a notification area icon in environments where this is supported
+* `org.gnome.SessionManager`, to inhibit suspend / hibernation while there are active uploads or downloads
 
 ## Delta from upstream
 
