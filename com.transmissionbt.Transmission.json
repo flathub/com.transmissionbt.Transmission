@@ -100,7 +100,9 @@
                     "paths": [
                         "0001-gtk-use-com.transmissionbt.Transmission.-D-Bus-names.patch",
                         "0002-GTK-Improve-appstream-metainfo-5407.patch",
-                        "0003-GTK-Add-4.0.4-and-4.0.5-releases-to-metainfo.patch"
+                        "0003-GTK-Add-4.0.4-and-4.0.5-releases-to-metainfo.patch",
+                        "0004-Add-caption-to-screenshot-in-metainfo.patch",
+                        "0005-Add-developer_name-and-developer-to-metainfo.patch"
                     ]
                 }
             ]
