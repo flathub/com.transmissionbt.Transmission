@@ -1,0 +1,35 @@
+From 791e16d67c75c63090fe2d09d4ce969759ce525a Mon Sep 17 00:00:00 2001
+From: Will Thompson <will@willthompson.co.uk>
+Date: Tue, 6 Feb 2024 11:31:12 +0000
+Subject: [PATCH 2/2] Add developer_name and developer to metainfo
+
+<developer_name> is the old, deprecated tag, and I believe is what is
+actually used by Flathub and software centres today.
+https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-developer_name
+
+<developer> is the new tag, and perhaps one day it will be used.
+https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-developer
+
+Add both, with the same value.
+---
+ gtk/transmission-gtk.metainfo.xml.in | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+diff --git a/gtk/transmission-gtk.metainfo.xml.in b/gtk/transmission-gtk.metainfo.xml.in
+index 36967ab54..9b8d75a38 100644
+--- a/gtk/transmission-gtk.metainfo.xml.in
++++ b/gtk/transmission-gtk.metainfo.xml.in
+@@ -9,6 +9,10 @@ Copyright 2017 Endless Mobile, Inc.
+   <project_license>GPL-2.0 OR GPL-3.0</project_license>
+ 
+   <name>Transmission</name>
++  <developer_name>The Transmission Project</developer_name>
++  <developer id="transmissionbt.com">
++    <name>The Transmission Project</name>
++  </developer>
+   <summary>Download and share files over BitTorrent</summary>
+ 
+   <description>
+-- 
+2.39.2
+
