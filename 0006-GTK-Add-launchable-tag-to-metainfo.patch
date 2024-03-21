@@ -1,0 +1,22 @@
+From 5c83f3ba2d4ac8d84d23340510b4d899f81a2df1 Mon Sep 17 00:00:00 2001
+From: Will Thompson <will@willthompson.co.uk>
+Date: Thu, 21 Mar 2024 13:40:31 +0000
+Subject: [PATCH] GTK: Add <launchable> tag to metainfo
+
+---
+ gtk/transmission-gtk.metainfo.xml.in | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/gtk/transmission-gtk.metainfo.xml.in b/gtk/transmission-gtk.metainfo.xml.in
+index 9b8d75a38..599fe08ac 100644
+--- a/gtk/transmission-gtk.metainfo.xml.in
++++ b/gtk/transmission-gtk.metainfo.xml.in
+@@ -61,4 +61,5 @@ Copyright 2017 Endless Mobile, Inc.
+     <release date="2020-05-03" version="3.00" />
+   </releases>
+   <translation type="gettext">transmission-gtk</translation>
++  <launchable type="desktop-id">transmission-gtk.desktop</launchable>
+ </component>
+-- 
+2.39.2
+
