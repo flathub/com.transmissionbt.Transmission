@@ -1,7 +1,7 @@
 {
     "app-id": "com.transmissionbt.Transmission",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "45",
+    "runtime-version": "46",
     "sdk": "org.gnome.Sdk",
     "command": "transmission-gtk",
     "rename-desktop-file": "transmission-gtk.desktop",
@@ -102,7 +102,8 @@
                         "0002-GTK-Improve-appstream-metainfo-5407.patch",
                         "0003-GTK-Add-4.0.4-and-4.0.5-releases-to-metainfo.patch",
                         "0004-Add-caption-to-screenshot-in-metainfo.patch",
-                        "0005-Add-developer_name-and-developer-to-metainfo.patch"
+                        "0005-Add-developer_name-and-developer-to-metainfo.patch",
+                        "0006-GTK-Add-launchable-tag-to-metainfo.patch"
                     ]
                 }
             ]
