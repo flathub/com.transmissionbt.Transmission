@@ -92,8 +92,8 @@
                         "url-template": "https://github.com/transmission/transmission/releases/download/$version/transmission-$version.tar.xz"
                     },
                     "type": "archive",
-                    "url": "https://github.com/transmission/transmission/releases/download/4.0.5/transmission-4.0.5.tar.xz",
-                    "sha256": "fd68ff114a479200043c30c7e69dba4c1932f7af36ca4c5b5d2edcb5866e6357"
+                    "url": "https://github.com/transmission/transmission/releases/download/4.0.6/transmission-4.0.6.tar.xz",
+                    "sha256": "2a38fe6d8a23991680b691c277a335f8875bdeca2b97c6b26b598bc9c7b0c45f"
                 },
                 {
                     "type": "patch",
