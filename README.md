@@ -22,13 +22,6 @@ This manifest allows Transmission access to:
 * GVFS, to support opening torrent files by URI
 * `org.kde.StatusNotifierWatcher`, to display a notification area icon in environments where this is supported
 
-## Delta from upstream
-
-* `appdata.patch`: Flathub requires OARS, not yet submitted upstream.
-* `0001-gtk-use-com.transmissionbt.Transmission.-D-Bus-names.patch`: Flatpak only allows apps to own names within the namespace matching the app name. Not submitted upstream.
-* `0002-gtk-Use-reversed-domain-icon-name-throughout.patch`: as above, but for icons.
-
-
 ## Colophon
 
 This manifest is derived from that published by Pierre Dureau at <https://github.com/pdureau/flatpak-manifests.git>, via an [intermediate version used for Endless OS](https://github.com/endlessm/transmission-flatpak).

@@ -92,18 +92,14 @@
                         "url-template": "https://github.com/transmission/transmission/releases/download/$version/transmission-$version.tar.xz"
                     },
                     "type": "archive",
-                    "url": "https://github.com/transmission/transmission/releases/download/4.0.5/transmission-4.0.5.tar.xz",
-                    "sha256": "fd68ff114a479200043c30c7e69dba4c1932f7af36ca4c5b5d2edcb5866e6357"
+                    "url": "https://github.com/transmission/transmission/releases/download/4.0.6/transmission-4.0.6.tar.xz",
+                    "sha256": "2a38fe6d8a23991680b691c277a335f8875bdeca2b97c6b26b598bc9c7b0c45f"
                 },
                 {
                     "type": "patch",
                     "paths": [
                         "0001-gtk-use-com.transmissionbt.Transmission.-D-Bus-names.patch",
-                        "0002-GTK-Improve-appstream-metainfo-5407.patch",
-                        "0003-GTK-Add-4.0.4-and-4.0.5-releases-to-metainfo.patch",
-                        "0004-Add-caption-to-screenshot-in-metainfo.patch",
-                        "0005-Add-developer_name-and-developer-to-metainfo.patch",
-                        "0006-GTK-Add-launchable-tag-to-metainfo.patch"
+                        "0002-GTK-Add-4.0.6-release-to-appstream-metainfo.patch"
                     ]
                 }
             ]
