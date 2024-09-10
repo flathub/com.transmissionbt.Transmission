@@ -3,8 +3,8 @@
     "sources": [
         {
             "type": "archive",
-            "url": "https://download.gnome.org/sources/gtkmm/4.14/gtkmm-4.14.0.tar.xz",
-            "sha256": "9350a0444b744ca3dc69586ebd1b6707520922b6d9f4f232103ce603a271ecda",
+            "url": "https://download.gnome.org/sources/gtkmm/4.16/gtkmm-4.16.0.tar.xz",
+            "sha256": "3b23fd3abf8fb223b00e9983b6010af2db80e38c89ab6994b8b6230aa85d60f9",
             "x-checker-data": {
                 "type": "gnome",
                 "name": "gtkmm"
@@ -59,8 +59,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/glibmm/2.80/glibmm-2.80.0.tar.xz",
-                    "sha256": "539b0a29e15a96676c4f0594541250566c5ca44da5d4d87a3732fa2d07909e4a",
+                    "url": "https://download.gnome.org/sources/glibmm/2.82/glibmm-2.82.0.tar.xz",
+                    "sha256": "38684cff317273615c67b8fa9806f16299d51e5506d9b909bae15b589fa99cb6",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "glibmm"
@@ -111,8 +111,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/pangomm/2.52/pangomm-2.52.0.tar.xz",
-                    "sha256": "34a134126a6484ff12f774358c36ecc44d0e9df094e1b83796d9774bb7d24947",
+                    "url": "https://download.gnome.org/sources/pangomm/2.54/pangomm-2.54.0.tar.xz",
+                    "sha256": "4a5b1fd1b7c47a1af45277ea82b5abeaca8e08fb10a27daa6394cf88d74e7acf",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "pangomm"
