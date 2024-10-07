@@ -87,13 +87,16 @@
             "sources": [
                 {
                     "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 5002,
-                        "url-template": "https://github.com/transmission/transmission/releases/download/$version/transmission-$version.tar.xz"
+                        "type": "json",
+                        "url": "https://api.github.com/repos/transmission/transmission/releases/latest",
+                        "tag-query": ".tag_name",
+                        "version-query": ".name",
+                        "timestamp-query": ".published_at"
                     },
-                    "type": "archive",
-                    "url": "https://github.com/transmission/transmission/releases/download/4.0.6/transmission-4.0.6.tar.xz",
-                    "sha256": "2a38fe6d8a23991680b691c277a335f8875bdeca2b97c6b26b598bc9c7b0c45f"
+                    "type": "git",
+                    "url": "https://github.com/transmission/transmission.git",
+                    "tag": "4.0.6",
+                    "commit": "38c164933e9f77c110b48fe745861c3b98e3d83e"
                 },
                 {
                     "type": "patch",
