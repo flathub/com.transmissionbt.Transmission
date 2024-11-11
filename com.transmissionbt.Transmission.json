@@ -1,7 +1,7 @@
 {
     "app-id": "com.transmissionbt.Transmission",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "46",
+    "runtime-version": "47",
     "sdk": "org.gnome.Sdk",
     "command": "transmission-gtk",
     "rename-desktop-file": "transmission-gtk.desktop",
@@ -87,23 +87,23 @@
             "sources": [
                 {
                     "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 5002,
-                        "url-template": "https://github.com/transmission/transmission/releases/download/$version/transmission-$version.tar.xz"
+                        "is-main-source": true,
+                        "type": "json",
+                        "url": "https://api.github.com/repos/transmission/transmission/releases/latest",
+                        "tag-query": ".tag_name",
+                        "version-query": ".name",
+                        "timestamp-query": ".published_at"
                     },
-                    "type": "archive",
-                    "url": "https://github.com/transmission/transmission/releases/download/4.0.5/transmission-4.0.5.tar.xz",
-                    "sha256": "fd68ff114a479200043c30c7e69dba4c1932f7af36ca4c5b5d2edcb5866e6357"
+                    "type": "git",
+                    "url": "https://github.com/transmission/transmission.git",
+                    "tag": "4.0.6",
+                    "commit": "38c164933e9f77c110b48fe745861c3b98e3d83e"
                 },
                 {
                     "type": "patch",
                     "paths": [
                         "0001-gtk-use-com.transmissionbt.Transmission.-D-Bus-names.patch",
-                        "0002-GTK-Improve-appstream-metainfo-5407.patch",
-                        "0003-GTK-Add-4.0.4-and-4.0.5-releases-to-metainfo.patch",
-                        "0004-Add-caption-to-screenshot-in-metainfo.patch",
-                        "0005-Add-developer_name-and-developer-to-metainfo.patch",
-                        "0006-GTK-Add-launchable-tag-to-metainfo.patch"
+                        "0002-GTK-Add-4.0.6-release-to-appstream-metainfo.patch"
                     ]
                 }
             ]
