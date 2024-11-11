@@ -87,6 +87,7 @@
             "sources": [
                 {
                     "x-checker-data": {
+                        "is-main-source": true,
                         "type": "json",
                         "url": "https://api.github.com/repos/transmission/transmission/releases/latest",
                         "tag-query": ".tag_name",
