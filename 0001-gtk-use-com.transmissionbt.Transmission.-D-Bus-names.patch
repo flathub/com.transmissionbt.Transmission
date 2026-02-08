@@ -16,15 +16,14 @@ diff --git a/gtk/Application.cc b/gtk/Application.cc
 index 52d5e7c1f..6690c5158 100644
 --- a/gtk/Application.cc
 +++ b/gtk/Application.cc
-@@ -700,7 +700,7 @@ std::string get_application_id(std::string const& config_dir)
+@@ -710,7 +710,7 @@
  {
      struct stat sb = {};
      (void)::stat(config_dir.c_str(), &sb);
 -    return fmt::format("com.transmissionbt.transmission_{}_{}", sb.st_dev, sb.st_ino);
 +    return fmt::format("com.transmissionbt.Transmission._{}_{}", sb.st_dev, sb.st_ino);
  }
-
+ 
  } // namespace
---
-2.39.2
+
 
