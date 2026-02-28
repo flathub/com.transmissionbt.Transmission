@@ -6,7 +6,7 @@
     "command": "transmission-gtk",
     "rename-desktop-file": "transmission-gtk.desktop",
     "rename-appdata-file": "transmission-gtk.metainfo.xml",
-    "rename-icon": "transmission",
+    "rename-icon": "transmission-gtk",
     "copy-icon": true,
     "finish-args": [
         "--device=dri",
