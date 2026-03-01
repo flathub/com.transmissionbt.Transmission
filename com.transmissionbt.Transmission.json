@@ -6,7 +6,7 @@
     "command": "transmission-gtk",
     "rename-desktop-file": "transmission-gtk.desktop",
     "rename-appdata-file": "transmission-gtk.metainfo.xml",
-    "rename-icon": "transmission",
+    "rename-icon": "transmission-gtk",
     "copy-icon": true,
     "finish-args": [
         "--device=dri",
@@ -96,8 +96,8 @@
                     },
                     "type": "git",
                     "url": "https://github.com/transmission/transmission.git",
-                    "tag": "4.1.0",
-                    "commit": "272401184f0736e6063f9da90be7d037e907508a"
+                    "tag": "4.1.1",
+                    "commit": "56442e2929cf4e9e20c8604a229e99fbb352190c"
                 },
                 {
                     "type": "patch",
