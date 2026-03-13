@@ -16,7 +16,7 @@ index 599fe08ac..0ce422978 100644
    </content_rating>
    <releases>
 +    <release date="2026-02-20" version="4.1.1">
-+      <url>https://github.com/transmission/transmission/releases/tag/4.1.0</url>
++      <url>https://github.com/transmission/transmission/releases/tag/4.1.1</url>
 +    </release>
      <release date="2023-12-06" version="4.0.5" />
      <release date="2023-08-23" version="4.0.4" />
