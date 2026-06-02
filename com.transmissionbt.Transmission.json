@@ -96,8 +96,8 @@
                     },
                     "type": "git",
                     "url": "https://github.com/transmission/transmission.git",
-                    "tag": "4.1.1",
-                    "commit": "56442e2929cf4e9e20c8604a229e99fbb352190c"
+                    "tag": "4.1.2",
+                    "commit": "f234716f3e999cdbb9da37db3c49e184fc5121bb"
                 },
                 {
                     "type": "patch",
