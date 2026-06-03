@@ -93,8 +93,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.cairographics.org/releases/cairomm-1.18.0.tar.xz",
-                    "sha256": "b81255394e3ea8e8aa887276d22afa8985fc8daef60692eb2407d23049f03cfb",
+                    "url": "https://www.cairographics.org/releases/cairomm-1.18.1.tar.xz",
+                    "sha256": "e0e996a979ee52c840dca3ee74f5d005e3259b94ddce58f255d3b6f47c8cb41d",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 7959,
