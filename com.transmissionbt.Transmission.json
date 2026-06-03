@@ -1,7 +1,7 @@
 {
     "app-id": "com.transmissionbt.Transmission",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "49",
+    "runtime-version": "50",
     "sdk": "org.gnome.Sdk",
     "command": "transmission-gtk",
     "rename-desktop-file": "transmission-gtk.desktop",
@@ -19,26 +19,21 @@
         "--talk-name=org.freedesktop.Notifications",
         "--filesystem=xdg-run/gvfsd",
         "--talk-name=org.gtk.vfs.*",
-        "--talk-name=org.kde.StatusNotifierWatcher"
+        "--talk-name=org.kde.StatusNotifierWatcher",
+        "--talk-name=org.gnome.SessionManager"
     ],
     "cleanup": [
-        "*.a",
-        "*.la",
         "/include",
         "/lib/pkgconfig",
-        "/share/aclocal",
         "/share/doc",
-        "/share/gdm",
-        "/share/gnome",
         "/share/man",
-        "/share/pixmaps",
-        "/share/pkgconfig"
+        "*.la",
+        "*.a"
     ],
     "modules": [
         {
             "name": "libevent",
             "cleanup": [
-                "/include",
                 "/bin"
             ],
             "sources": [
@@ -74,18 +69,19 @@
             "buildsystem": "cmake-ninja",
             "config-opts": [
                 "-DCMAKE_BUILD_TYPE=RelWithDebInfo",
+                "-DENABLE_GTK=ON",
+                "-DENABLE_DAEMON=OFF",
+                "-DENABLE_UTILS=OFF",
                 "-DENABLE_TESTS=OFF",
                 "-DENABLE_MAC=OFF",
-                "-DENABLE_GTK=ON"
-            ],
-            "cleanup": [
-                "/bin/transmission-create",
-                "/bin/transmission-daemon",
-                "/bin/transmission-edit",
-                "/bin/transmission-show"
+                "-DINSTALL_DOC=OFF"
             ],
             "sources": [
                 {
+                    "type": "git",
+                    "url": "https://github.com/transmission/transmission.git",
+                    "tag": "4.1.2",
+                    "commit": "f234716f3e999cdbb9da37db3c49e184fc5121bb",
                     "x-checker-data": {
                         "is-main-source": true,
                         "type": "json",
@@ -93,17 +89,13 @@
                         "tag-query": ".tag_name",
                         "version-query": ".name",
                         "timestamp-query": ".published_at"
-                    },
-                    "type": "git",
-                    "url": "https://github.com/transmission/transmission.git",
-                    "tag": "4.1.1",
-                    "commit": "56442e2929cf4e9e20c8604a229e99fbb352190c"
+                    }
                 },
                 {
                     "type": "patch",
                     "paths": [
-                        "0001-gtk-use-com.transmissionbt.Transmission.-D-Bus-names.patch",
-                        "0002-GTK-Add-4.0.6-release-to-appstream-metainfo.patch"
+                        "patches/0001-gtk-use-com.transmissionbt.Transmission.-D-Bus-names.patch",
+                        "patches/0002-GTK-Add-4.0.6-release-to-appstream-metainfo.patch"
                     ]
                 }
             ]
