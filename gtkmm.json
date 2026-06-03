@@ -18,7 +18,9 @@
             "sha256": "2e8a21b4b0725f620e33aaee0cd343ed121b533275b632896619b1c89e96de67",
             "x-checker-data": {
                 "type": "gnome",
-                "name": "gtkmm"
+                "name": "gtkmm",
+                "stable-only": true,
+                "version-scheme": "odd-minor-is-unstable"
             }
         }
     ],
@@ -42,7 +44,9 @@
                     "sha256": "c3d23b37dfd6e39f2e09f091b77b1541fbfa17c4f0b6bf5c89baef7229080e17",
                     "x-checker-data": {
                         "type": "gnome",
-                        "name": "libsigc++"
+                        "name": "libsigc++",
+                        "stable-only": true,
+                        "version-scheme": "odd-minor-is-unstable"
                     }
                 }
             ]
@@ -67,7 +71,9 @@
                     "sha256": "a6549da3a6c43de83b8717dae5413c57a60d92f6ecc624615c612d0bb0ad0fe2",
                     "x-checker-data": {
                         "type": "gnome",
-                        "name": "glibmm"
+                        "name": "glibmm",
+                        "stable-only": true,
+                        "version-scheme": "odd-minor-is-unstable"
                     }
                 }
             ]
@@ -87,8 +93,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.cairographics.org/releases/cairomm-1.18.0.tar.xz",
-                    "sha256": "b81255394e3ea8e8aa887276d22afa8985fc8daef60692eb2407d23049f03cfb",
+                    "url": "https://www.cairographics.org/releases/cairomm-1.18.1.tar.xz",
+                    "sha256": "e0e996a979ee52c840dca3ee74f5d005e3259b94ddce58f255d3b6f47c8cb41d",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 7959,
@@ -114,7 +120,9 @@
                     "sha256": "539f5aa60e9bdc6b955bb448e2a62cc14562744df690258040fbb74bf885755d",
                     "x-checker-data": {
                         "type": "gnome",
-                        "name": "pangomm"
+                        "name": "pangomm",
+                        "stable-only": true,
+                        "version-scheme": "odd-minor-is-unstable"
                     }
                 }
             ]
@@ -136,7 +144,9 @@
                     "sha256": "19cd0758ed752cb89f5bf02247663dfad0926d9351984a20e3c6cf7da62552ac",
                     "x-checker-data": {
                         "type": "gnome",
-                        "name": "atkmm"
+                        "name": "atkmm",
+                        "stable-only": true,
+                        "version-scheme": "odd-minor-is-unstable"
                     }
                 }
             ]
