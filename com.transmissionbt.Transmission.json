@@ -68,9 +68,10 @@
             "buildsystem": "cmake-ninja",
             "config-opts": [
                 "-DCMAKE_BUILD_TYPE=RelWithDebInfo",
+                "-DENABLE_GTK=ON",
                 "-DENABLE_TESTS=OFF",
                 "-DENABLE_MAC=OFF",
-                "-DENABLE_GTK=ON"
+                "-DINSTALL_DOC=OFF"
             ],
             "cleanup": [
                 "/bin/transmission-create",
