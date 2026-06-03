@@ -81,6 +81,10 @@
             ],
             "sources": [
                 {
+                    "type": "git",
+                    "url": "https://github.com/transmission/transmission.git",
+                    "tag": "4.1.2",
+                    "commit": "f234716f3e999cdbb9da37db3c49e184fc5121bb",
                     "x-checker-data": {
                         "is-main-source": true,
                         "type": "json",
@@ -88,11 +92,7 @@
                         "tag-query": ".tag_name",
                         "version-query": ".name",
                         "timestamp-query": ".published_at"
-                    },
-                    "type": "git",
-                    "url": "https://github.com/transmission/transmission.git",
-                    "tag": "4.1.1",
-                    "commit": "56442e2929cf4e9e20c8604a229e99fbb352190c"
+                    }
                 },
                 {
                     "type": "patch",
