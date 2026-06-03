@@ -69,15 +69,11 @@
             "config-opts": [
                 "-DCMAKE_BUILD_TYPE=RelWithDebInfo",
                 "-DENABLE_GTK=ON",
+                "-DENABLE_DAEMON=OFF",
+                "-DENABLE_UTILS=OFF",
                 "-DENABLE_TESTS=OFF",
                 "-DENABLE_MAC=OFF",
                 "-DINSTALL_DOC=OFF"
-            ],
-            "cleanup": [
-                "/bin/transmission-create",
-                "/bin/transmission-daemon",
-                "/bin/transmission-edit",
-                "/bin/transmission-show"
             ],
             "sources": [
                 {
