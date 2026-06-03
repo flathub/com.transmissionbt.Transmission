@@ -102,8 +102,8 @@
                 {
                     "type": "patch",
                     "paths": [
-                        "0001-gtk-use-com.transmissionbt.Transmission.-D-Bus-names.patch",
-                        "0002-GTK-Add-4.0.6-release-to-appstream-metainfo.patch"
+                        "patches/0001-gtk-use-com.transmissionbt.Transmission.-D-Bus-names.patch",
+                        "patches/0002-GTK-Add-4.0.6-release-to-appstream-metainfo.patch"
                     ]
                 }
             ]
