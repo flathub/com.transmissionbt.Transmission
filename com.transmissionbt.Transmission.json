@@ -22,23 +22,17 @@
         "--talk-name=org.kde.StatusNotifierWatcher"
     ],
     "cleanup": [
-        "*.a",
-        "*.la",
         "/include",
         "/lib/pkgconfig",
-        "/share/aclocal",
         "/share/doc",
-        "/share/gdm",
-        "/share/gnome",
         "/share/man",
-        "/share/pixmaps",
-        "/share/pkgconfig"
+        "*.la",
+        "*.a"
     ],
     "modules": [
         {
             "name": "libevent",
             "cleanup": [
-                "/include",
                 "/bin"
             ],
             "sources": [
