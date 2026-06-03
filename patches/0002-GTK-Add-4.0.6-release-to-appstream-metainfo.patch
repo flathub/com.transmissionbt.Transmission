@@ -11,10 +11,13 @@ diff --git a/gtk/transmission-gtk.metainfo.xml.in b/gtk/transmission-gtk.metainf
 index 599fe08ac..0ce422978 100644
 --- a/gtk/transmission-gtk.metainfo.xml.in
 +++ b/gtk/transmission-gtk.metainfo.xml.in
-@@ -52,6 +52,9 @@ Copyright 2017 Endless Mobile, Inc.
+@@ -52,6 +52,12 @@ Copyright 2017 Endless Mobile, Inc.
      <content_attribute id="social-info">mild</content_attribute>
    </content_rating>
    <releases>
++    <release date="2026-06-03" version="4.1.2">
++      <url>https://github.com/transmission/transmission/releases/tag/4.1.2</url>
++    </release>
 +    <release date="2026-02-20" version="4.1.1">
 +      <url>https://github.com/transmission/transmission/releases/tag/4.1.1</url>
 +    </release>
