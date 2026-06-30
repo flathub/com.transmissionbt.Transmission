@@ -80,8 +80,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/transmission/transmission.git",
-                    "tag": "4.1.2",
-                    "commit": "f234716f3e999cdbb9da37db3c49e184fc5121bb",
+                    "tag": "4.1.3",
+                    "commit": "838877323facc4cc2b677fe817e203779c437bb1",
                     "x-checker-data": {
                         "is-main-source": true,
                         "type": "json",
