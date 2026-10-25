@@ -15,7 +15,7 @@ index 599fe08ac..0ce422978 100644
      <content_attribute id="social-info">mild</content_attribute>
    </content_rating>
    <releases>
-+    <release date="2026-06-30" version="4.1.4">
++    <release date="2026-10-24" version="4.1.4">
 +      <url>https://github.com/transmission/transmission/releases/tag/4.1.4</url>
 +    </release>
 +    <release date="2026-06-30" version="4.1.3">
