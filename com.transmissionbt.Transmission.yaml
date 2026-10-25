@@ -1,0 +1,94 @@
+app-id: com.transmissionbt.Transmission
+runtime: org.kde.Platform
+runtime-version: '6.11'
+sdk: org.kde.Sdk
+command: transmission-qt
+rename-desktop-file: transmission-qt.desktop
+rename-icon: transmission-qt
+copy-icon: true
+finish-args:
+  - --device=dri
+  - --share=ipc
+  - --share=network
+  - --socket=fallback-x11
+  - --socket=wayland
+  - --socket=pulseaudio
+  - --filesystem=host
+  - --talk-name=org.freedesktop.Notifications
+  - --filesystem=xdg-run/gvfsd
+  - --talk-name=org.gtk.vfs.*
+  - --talk-name=org.kde.StatusNotifierWatcher
+  - --talk-name=org.gnome.SessionManager
+cleanup:
+  - /include
+  - /lib/pkgconfig
+  - /share/doc
+  - /share/man
+  - '*.la'
+  - '*.a'
+modules:
+  # Required by: transmission-gtk
+  - gtkmm-3.json
+  # Required by: transmission-gtk v3
+  - shared-modules/libayatana-appindicator/libayatana-appindicator-gtk3.json
+  # Required by: I have no idea
+  - shared-modules/libcanberra/libcanberra.json
+  # Required by: I have no idea
+  - name: libevent
+    cleanup:
+      - /bin
+    sources:
+      - type: archive
+        url: https://github.com/libevent/libevent/releases/download/release-2.1.13-stable/libevent-2.1.13-stable.tar.gz
+        sha256: f7e9383b8c0baa81b687e5b5eecc01beefaf1b19b64151d95ed61647fe7a315c
+        x-checker-data:
+          type: anitya
+          project-id: 1606
+          url-template: https://github.com/libevent/libevent/releases/download/release-$version-stable/libevent-$version-stable.tar.gz
+  # Required by: transmission sound effect. ding!
+  - name: sound-theme-freedesktop
+    sources:
+      - type: archive
+        url: http://people.freedesktop.org/~mccann/dist/sound-theme-freedesktop-0.8.tar.bz2
+        sha256: cb518b20eef05ec2e82dda1fa89a292c1760dc023aba91b8aa69bafac85e8a14
+  - name: transmission
+    buildsystem: cmake-ninja
+    config-opts:
+      - -DCMAKE_BUILD_TYPE=RelWithDebInfo
+      - -DENABLE_DAEMON=ON
+      - -DENABLE_QT=ON
+      - -DUSE_QT_VERSION=6
+      - -DENABLE_GTK=ON
+      - -DUSE_GTK_VERSION=3
+      - -DENABLE_MAC=OFF
+      - -DINSTALL_WEB=ON
+      - -DENABLE_UTILS=ON
+      - -DENABLE_CLI=ON
+      - -DENABLE_TESTS=OFF
+      - -DINSTALL_DOC=OFF
+    post-install:
+      # Install the GTK desktop file, fix the icon, and hide it from the KDE Desktop
+      - mv /app/share/applications/transmission-gtk.desktop /app/share/applications/${FLATPAK_ID}-gtk.desktop
+      - desktop-file-edit --add-not-show-in=KDE /app/share/applications/${FLATPAK_ID}-gtk.desktop
+      - desktop-file-edit --set-icon=${FLATPAK_ID} /app/share/applications/${FLATPAK_ID}-gtk.desktop
+      - desktop-file-edit --set-key=StartupWMClass --set-value=${FLATPAK_ID} /app/share/applications/${FLATPAK_ID}-gtk.desktop
+      # Use transmission-qt only for the KDE Desktop
+      - desktop-file-edit --add-only-show-in=KDE /app/share/applications/transmission-qt.desktop
+      # Install metainfo file
+      - install -Dm644 ${FLATPAK_ID}.metainfo.xml -t /app/share/metainfo/
+    cleanup:
+      - /share/metainfo/transmission-gtk.metainfo.xml
+    sources:
+      - type: git
+        url: https://github.com/transmission/transmission.git
+        tag: 4.1.4
+        commit: a6d907d9ea2313143af714d7830feb6c1b60b84c
+        x-checker-data:
+          is-main-source: true
+          type: json
+          url: https://api.github.com/repos/transmission/transmission/releases/latest
+          tag-query: .tag_name
+          version-query: .name
+          timestamp-query: .published_at
+      - type: file
+        path: com.transmissionbt.Transmission.metainfo.xml
